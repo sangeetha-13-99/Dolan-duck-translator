@@ -1,0 +1,104 @@
+$blue:rgb(61, 102, 197);
+
+.app-container{
+    background-color: rgba(224, 212, 247, 0.568);
+}
+.section-main-image{
+    width:80px;
+    left:0;
+    position:relative;
+}
+
+.section-heading{
+    position: fixed;
+    z-index: 1;
+    border-bottom-left-radius:100px ;
+    border-bottom-right-radius:100px ;
+    background-color: $blue;
+    width:100%;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    padding:2rem;
+    margin-bottom:2rem;
+    h2{
+        color:white;
+        font-weight: bold;
+    }
+}
+
+.section-main{
+    padding:6rem 0 16rem 0;
+    font-family: 'Patrick Hand', cursive;
+    #textarea-field{
+        background: none;
+        padding:10px;
+        outline: none;
+        font-size: 20px;
+        height:120px;
+        margin-bottom:20px;
+        border:2px solid black;
+        &::placeholder{
+            color:$blue;
+        }
+    }
+    .btn-translate{
+        color:white;
+        border:none;
+        outline:none;
+        border:2px solid white;
+        padding:10px;
+        border-radius:20px;
+        background-color: $blue;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom:20px;
+        display: block;
+        &:hover{
+            border:2px solid black;
+            color:black;
+            background-color: white;
+        }
+    }
+    .text-msg{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Jost', sans-serif;
+        
+
+    }
+    .server-error-msg{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: 'Jost', sans-serif;
+        text-align: center;
+        color:red;
+        padding:10px;
+    }
+    .output-field{
+        font-size: 20px;
+        padding:10px;
+        border:2px solid black;
+        border-radius: 20px;
+        height:150px;
+        color:$blue;
+    }
+}
+
+.section-footer{
+    color:white;
+    position: fixed;
+    bottom: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    border-top-left-radius:100px ;
+    border-top-right-radius:100px ;
+    background-color: $blue;
+    padding:10px;
+    font-weight: bold;
+    text-align: center;
+    h2{
+        color:black;
+        padding:10px;
+        font-weight: bold;
+    }
+}

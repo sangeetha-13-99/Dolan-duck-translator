@@ -1,0 +1,123 @@
+.app-container {
+  background-color: rgba(224, 212, 247, 0.568);
+}
+
+.section-main-image {
+  width: 80px;
+  left: 0;
+  position: relative;
+}
+
+.section-heading {
+  position: fixed;
+  z-index: 1;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: #3d66c5;
+  width: 100%;
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.section-main {
+  padding: 6rem 0 16rem 0;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.section-main #textarea-field {
+  background: none;
+  padding: 10px;
+  outline: none;
+  font-size: 20px;
+  height: 120px;
+  margin-bottom: 20px;
+  border: 2px solid black;
+}
+
+.section-main #textarea-field::-webkit-input-placeholder {
+  color: #3d66c5;
+}
+
+.section-main #textarea-field:-ms-input-placeholder {
+  color: #3d66c5;
+}
+
+.section-main #textarea-field::-ms-input-placeholder {
+  color: #3d66c5;
+}
+
+.section-main #textarea-field::placeholder {
+  color: #3d66c5;
+}
+
+.section-main .btn-translate {
+  color: white;
+  border: none;
+  outline: none;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #3d66c5;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.section-main .btn-translate:hover {
+  border: 2px solid black;
+  color: black;
+  background-color: white;
+}
+
+.section-main .text-msg {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+}
+
+.section-main .server-error-msg {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Jost', sans-serif;
+  text-align: center;
+  color: red;
+  padding: 10px;
+}
+
+.section-main .output-field {
+  font-size: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 150px;
+  color: #3d66c5;
+}
+
+.section-footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: #3d66c5;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-footer h2 {
+  color: black;
+  padding: 10px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
