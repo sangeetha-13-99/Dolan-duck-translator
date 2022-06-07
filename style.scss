@@ -1,7 +1,18 @@
-$blue:rgb(61, 102, 197);
-
+$black:black;
+$red:red;
+$borderColor:rgb(223, 215, 215);
+$linearGradient:linear-gradient(45deg,rgba(147, 187, 161, 0.523),rgba(255, 255, 255, 0.591));
+body{
+    padding:0;
+    margin:0;
+}
 .app-container{
-    background-color: rgba(224, 212, 247, 0.568);
+    height:100vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin:0;
 }
 .section-main-image{
     width:80px;
@@ -10,95 +21,121 @@ $blue:rgb(61, 102, 197);
 }
 
 .section-heading{
-    position: fixed;
-    z-index: 1;
-    border-bottom-left-radius:100px ;
-    border-bottom-right-radius:100px ;
-    background-color: $blue;
-    width:100%;
-    font-family: 'Jost', sans-serif;
-    text-align: center;
-    padding:2rem;
-    margin-bottom:2rem;
+    padding:0.5rem 0 0 1rem;
     h2{
-        color:white;
+        font-family: 'Jost', sans-serif;
+        color:black;
         font-weight: bold;
     }
+    span{
+        display: block;
+        border: 2px solid $black;
+        background-color: $black;
+        width:220px;
+    }
 }
-
+.section-outerdiv{
+    display: flex;
+    padding-bottom:30px;
+    justify-content: space-between;
+    width:80%;
+    border-radius: 50px;
+    border:1px solid $borderColor;
+    margin:20px auto;
+    background-image: $linearGradient;
+    @media screen and (max-width:1199px) {
+        flex-direction: column;
+    }
+}
 .section-main{
-    padding:6rem 0 16rem 0;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
     font-family: 'Patrick Hand', cursive;
+    @media screen and (max-width:1199px){
+        width:100%;
+    }
     #textarea-field{
+        font-family: 'Patrick Hand', cursive;
         background: none;
         padding:10px;
+        border-radius: 10px;
         outline: none;
         font-size: 20px;
         height:120px;
-        margin-bottom:20px;
-        border:2px solid black;
+        margin-bottom:40px;
+        border:2px solid $black;
         &::placeholder{
-            color:$blue;
+            color:gray;
         }
     }
     .btn-translate{
-        color:white;
+        color:$black;
         border:none;
         outline:none;
-        border:2px solid white;
+        border:2px solid $black;
         padding:10px;
-        border-radius:20px;
-        background-color: $blue;
+        background-color: unset;
+        max-width:350px;
+        border-bottom: 5px solid $black;
+        border-right: 5px solid $black;
         font-size: 18px;
         font-weight: bold;
         margin-bottom:20px;
         display: block;
+        font-family: 'Jost', sans-serif;
         &:hover{
-            border:2px solid black;
-            color:black;
-            background-color: white;
+            border:2px solid $black;
+            color:$black;
         }
     }
     .text-msg{
         font-size: 16px;
         font-weight: bold;
         font-family: 'Jost', sans-serif;
-        
-
-    }
-    .server-error-msg{
-        font-size: 16px;
-        font-weight: bold;
-        font-family: 'Jost', sans-serif;
-        text-align: center;
-        color:red;
-        padding:10px;
     }
     .output-field{
         font-size: 20px;
         padding:10px;
-        border:2px solid black;
+        border:2px solid $black;
         border-radius: 20px;
         height:150px;
         color:$blue;
     }
 }
-
+.server-error-msg{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    color:$red;
+    padding:10px;
+}
 .section-footer{
-    color:white;
-    position: fixed;
-    bottom: 0;
+    width:30%;
+    height:70%;
+    color:$black;
     font-family: 'Jost', sans-serif;
     font-size: 18px;
-    border-top-left-radius:100px ;
-    border-top-right-radius:100px ;
-    background-color: $blue;
-    padding:10px;
+    border:2px solid $black;
+    border-radius: 50px;
+    padding:30px;
     font-weight: bold;
     text-align: center;
+    align-self: center;
+    margin-top:70px;
     h2{
-        color:black;
-        padding:10px;
+        border:2px solid $black;
+        color:$black;
+        padding:5px;
+        border-radius: 50px;
         font-weight: bold;
     }
+    @media screen and (max-width:1199px){
+        width:90%;
+        margin:30px 0 20px 0;
+    }
+
 }

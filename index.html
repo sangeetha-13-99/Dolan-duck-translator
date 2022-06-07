@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dolan Duck Translator</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Patrick+Hand&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="app-container container-fluid px-0">
-    <div class="section-heading col-12">
+<div class="app-container">
+    <div class="section-heading ">
         <h2>Dolan Duck Translator </h2>
+        <span></span>
     </div>
-    <div class="section-main col-10 mx-auto">
-        <p class="server-error-msg"></p>
-        <img class="section-main-image" src="./images/Dolan-Duck-PNG-Image.png"/>
-        <textarea class="col-12" id="textarea-field" placeholder="Put Your Message here which you want to convert to uncle Dolan Duck's language "></textarea>
-        <button class="btn-translate">Translate to DolanDuck's language</button>
-        <p class="text-msg">Hey,Your Translated text will be displayed here 👇</p>
-        <p class="output-field"></p>
-        
-    </div>
-    <div class="section-footer col-12">
-        <h2>About</h2>
-        <p>Convert from English to Dolan. Dolan is a sociopathic duck in a series called "The Uncle Dolan Show". The language used by the characters in the Dolan show is very similar to LOLCat, but misspelling are much more severe.</p>
+    <p class="server-error-msg"></p>
+    <div class="section-outerdiv">
+        <div class="section-main  ">
+            
+            <img class="section-main-image" src="./images/Dolan-Duck-PNG-Image.png"/>
+            <textarea class="col-12" id="textarea-field" placeholder="Put Your Message here which you want to convert to uncle Dolan Duck's language "></textarea>
+            <button class="btn-translate">Translate to DolanDuck's language</button>
+            <p class="text-msg">Hey,Your Translated text will be displayed here 👇</p>
+            <p class="output-field"></p>
+            
+        </div>
+        <div class="section-footer col-12">
+            <h2>About</h2>
+            <p>Convert from English to Dolan. Dolan is a sociopathic duck in a series called "The Uncle Dolan Show". The language used by the characters in the Dolan show is very similar to LOLCat, but misspelling are much more severe.</p>
+        </div>
     </div>
 </div>
     <script src="app.js"></script>
