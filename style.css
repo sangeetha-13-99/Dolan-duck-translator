@@ -24,7 +24,7 @@ body {
 }
 
 .section-heading {
-  padding: 0.5rem 0 0 1rem;
+  padding: 0 0 0 0.5rem;
 }
 
 .section-heading h2 {
@@ -50,10 +50,12 @@ body {
           justify-content: space-between;
   width: 80%;
   border-radius: 50px;
-  border: 1px solid #dfd7d7;
+  border: 1px solid #c6c3c3;
+  -webkit-box-shadow: -1px -1px 30px #c7c1c1;
+          box-shadow: -1px -1px 30px #c7c1c1;
+  margin: 0 auto 20px auto;
   padding: 20px;
-  margin: 20px auto;
-  background-image: linear-gradient(45deg, rgba(147, 187, 161, 0.523), rgba(255, 255, 255, 0.591));
+  background-image: linear-gradient(45deg, rgba(157, 220, 179, 0.614), rgba(233, 244, 170, 0.276));
 }
 
 @media screen and (max-width: 1199px) {
@@ -89,15 +91,17 @@ body {
 }
 
 .section-main #textarea-field {
+  resize: none;
   font-family: 'Patrick Hand', cursive;
   background: none;
   padding: 10px;
   border-radius: 10px;
   outline: none;
   font-size: 20px;
-  height: 120px;
+  height: 80px;
   margin-bottom: 40px;
   border: 2px solid black;
+  overflow: auto;
 }
 
 .section-main #textarea-field::-webkit-input-placeholder {
@@ -134,8 +138,8 @@ body {
 }
 
 .section-main .btn-translate:hover {
-  border: 2px solid black;
-  color: black;
+  font-size: 19px;
+  border-radius: 15px;
 }
 
 .section-main .text-msg {
@@ -149,8 +153,7 @@ body {
   padding: 10px;
   border: 2px solid black;
   border-radius: 20px;
-  height: 150px;
-  color: black;
+  height: 100px;
 }
 
 .server-error-msg {
@@ -189,7 +192,9 @@ body {
 
 @media screen and (max-width: 1199px) {
   .section-footer {
-    width: 90%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     margin: 30px 0 20px 0;
   }
 }

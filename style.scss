@@ -1,7 +1,9 @@
 $black:black;
 $red:red;
-$borderColor:rgb(223, 215, 215);
-$linearGradient:linear-gradient(45deg,rgba(147, 187, 161, 0.523),rgba(255, 255, 255, 0.591));
+// $borderColor:rgb(255, 255, 255);
+$borderColor:rgb(198, 195, 195);
+// $linearGradient:linear-gradient(45deg,rgba(147, 187, 161, 0.523),rgba(255, 255, 255, 0.591));
+$linearGradient:linear-gradient(45deg,rgba(157, 220, 179, 0.614),rgba(233, 244, 170, 0.276));
 body{
     padding:0;
     margin:0;
@@ -21,7 +23,7 @@ body{
 }
 
 .section-heading{
-    padding:0.5rem 0 0 1rem;
+    padding:0 0 0 0.5rem;
     h2{
         font-family: 'Jost', sans-serif;
         color:black;
@@ -41,7 +43,9 @@ body{
     width:80%;
     border-radius: 50px;
     border:1px solid $borderColor;
-    margin:20px auto;
+    box-shadow: -1px -1px 30px rgb(199, 193, 193);
+    margin:0 auto 20px auto;
+    padding:20px;
     background-image: $linearGradient;
     @media screen and (max-width:1199px) {
         flex-direction: column;
@@ -58,15 +62,17 @@ body{
         width:100%;
     }
     #textarea-field{
+        resize:none;
         font-family: 'Patrick Hand', cursive;
         background: none;
         padding:10px;
         border-radius: 10px;
         outline: none;
         font-size: 20px;
-        height:120px;
+        height:80px;
         margin-bottom:40px;
         border:2px solid $black;
+        overflow:auto;
         &::placeholder{
             color:gray;
         }
@@ -87,8 +93,8 @@ body{
         display: block;
         font-family: 'Jost', sans-serif;
         &:hover{
-            border:2px solid $black;
-            color:$black;
+            font-size: 19px;
+            border-radius:15px;
         }
     }
     .text-msg{
@@ -101,8 +107,8 @@ body{
         padding:10px;
         border:2px solid $black;
         border-radius: 20px;
-        height:150px;
-        color:$blue;
+        height:100px;
+    
     }
 }
 .server-error-msg{
@@ -134,7 +140,7 @@ body{
         font-weight: bold;
     }
     @media screen and (max-width:1199px){
-        width:90%;
+        width:fit-content;
         margin:30px 0 20px 0;
     }
 
